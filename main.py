@@ -66,7 +66,7 @@ def user_posts_page(
     posts = result.scalars().all()
     return templates.TemplateResponse(
         request,
-        "user_posts.html",
+        "user_post.html",
         {"posts": posts, "user": user, "title": f"{user.username}'s Posts"},
     )
 
